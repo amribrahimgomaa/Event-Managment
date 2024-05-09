@@ -1,0 +1,169 @@
+﻿/* Common styles */
+ul,
+li {
+    list-style: none;
+}
+
+/* Side Bar */
+.side-bar {
+    width: 220px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgb(230, 230, 230);
+    overflow: hidden;
+    overflow-y: auto;
+    position: fixed;
+    padding: 15px;
+}
+
+    .side-bar .logo,
+    .side-bar .avatar,
+    .side-bar .side-bar-nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        .side-bar .logo a img,
+        .side-bar .avatar .avatar-img img {
+            width: 65px;
+            height: auto;
+            margin-left: 5px;
+            margin-bottom: -10px;
+        }
+
+        .side-bar .logo a h1 {
+            font-size: 50px;
+            color: #d76412;
+            font-family: "Anton", sans-serif;
+            font-weight: 420;
+            margin-top: -5px;
+        }
+
+        .side-bar .side-bar-nav ul li a {
+            display: block;
+            padding: 15px 10px;
+            margin: 10px 0;
+            text-decoration: none;
+            width: 100%;
+            transition: .4s;
+            color: #a498b0;
+            font-size: 20px;
+        }
+
+            .side-bar .side-bar-nav ul li a:hover {
+                background-color: #e28746;
+                color: #fff;
+            }
+
+            .side-bar .side-bar-nav ul li a .nav-link,
+            .nav-link-pack,
+            .nav-link-custom {
+                margin-left: 15px;
+                font-weight: 600;
+            }
+
+    .side-bar .side-bar-nav .admin {
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+
+        .side-bar .side-bar-nav .admin .btn {
+            padding: 7px 25px;
+            background: linear-gradient(to left, #f59869, #e0733d);
+            border-radius: 3px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 19px;
+            color: #ffffff;
+        }
+
+/* Header */
+header {
+    margin-left: 250px;
+    padding: 15px;
+    box-shadow: 0 0 8px rgb(230, 230, 230);
+    min-height: 80px;
+}
+
+    header .head_inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+        header .head_inner .right-part form input,
+        header .head_inner .right-part form button {
+            width: 100%;
+        }
+
+        header .head_inner .right-part form button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 15%;
+            height: 100%;
+            padding-top: 5px;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            background-color: #e18a2c;
+            border: none;
+            cursor: pointer;
+            margin-right: -28px;
+        }
+
+        header .head_inner .left-part ul {
+            display: flex;
+            align-items: center;
+        }
+
+            header .head_inner .left-part ul li {
+                margin-left: 30px;
+            }
+
+                header .head_inner .left-part ul li span:hover {
+                    color: #d76412;
+                }
+
+/* Main Content */
+.main-content {
+    margin: 15px;
+    margin-left: 275px;
+    padding: 15px;
+    box-shadow: 0 0 8px rgb(230, 230, 230);
+    font-family: "Fira Sans Condensed", sans-serif;
+    z-index: 1;
+}
+
+    .main-content .info-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+        .main-content .info-card .card {
+            min-height: 230px;
+            background: linear-gradient(to left, #b576f6, #9a4fe9);
+            border-radius: 10px;
+            color: #fff;
+            position: relative;
+            padding-left: 15px;
+            padding-top: 10px;
+        }
+
+            .main-content .info-card .card:nth-child(2) {
+                background: linear-gradient(to left, #6aa5e3, #6888e9);
+            }
+
+            .main-content .info-card .card:nth-child(3) {
+                background: linear-gradient(to left, #feb683, #ff8993);
+            }
+
+.user_table #GridView3 {
+    Width ="100%";
+    HeaderStyle-BackColor:"#9933ff";
+    HeaderStyle-ForeColor:"White";
+}
